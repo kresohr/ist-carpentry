@@ -1,10 +1,13 @@
-import React from 'react'
-import '../assets/styles/HomepageStyle.scss'
+import React from "react";
+import "../assets/styles/HomepageStyle.scss";
 
 function Homepage() {
   return (
-    <div>Homepage</div>
-  )
+    <div>
+      Homepage
+      <p>test</p>
+    </div>
+  );
 }
 
-export default Homepage
+export default Homepage;
