@@ -14,7 +14,7 @@ const Hero = () => {
         <HeroSubheadline>
           Višegodišnje iskustvo projektiranja i izrade drvene stolarije
         </HeroSubheadline>
-        <HeroCTAButton>KONTAKTIRAJ NAS</HeroCTAButton>
+        <HeroCTAButton>ZATRAŽI PONUDU</HeroCTAButton>
       </HeroContainer>
     </>
   );

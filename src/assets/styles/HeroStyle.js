@@ -3,7 +3,7 @@ import backgroundImage from "../images/kitchen.png";
 
 export const HeroContainer = styled.div`
   background-image: url(${backgroundImage});
-
+  margin-top: 120px;
   width: 100%;
   min-height: 400px;
 
@@ -35,10 +35,10 @@ export const HeroSubheadline = styled.h2`
 
 export const HeroCTAButton = styled.button`
   margin-top: 50px;
-  background: #ffc300;
-  color: #333333;
-  border: none;
-  border-radius: 5px;
+  background: #292929;
+  color: white;
+  cursor: pointer;
+  border: 3px solid black;
   padding: 15px 25px;
   font-size: 22px;
   font-family: "Roboto", sans-serif;
