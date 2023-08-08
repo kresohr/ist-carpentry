@@ -5,6 +5,7 @@ import {
   HeroHeadline,
   HeroSubheadline,
 } from "../../assets/styles/HeroStyle";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -14,7 +15,9 @@ const Hero = () => {
         <HeroSubheadline>
           Višegodišnje iskustvo projektiranja i izrade drvene stolarije
         </HeroSubheadline>
-        <HeroCTAButton>ZATRAŽI PONUDU</HeroCTAButton>
+        <Link to="/contact">
+          <HeroCTAButton>POŠALJITE NAM UPIT</HeroCTAButton>
+        </Link>
       </HeroContainer>
     </>
   );

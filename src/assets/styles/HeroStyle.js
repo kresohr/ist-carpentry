@@ -40,6 +40,6 @@ export const HeroCTAButton = styled.button`
   cursor: pointer;
   border: 3px solid black;
   padding: 15px 25px;
-  font-size: 22px;
-  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-family: "Lalezar", sans-serif;
 `;
