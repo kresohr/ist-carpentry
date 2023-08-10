@@ -22,15 +22,24 @@ export const HeroContainer = styled.div`
 export const HeroHeadline = styled.h1`
   margin: 0;
   color: white;
-  font-size: 42px;
+  font-size: 35px;
   text-shadow: 1px 1px 2px black;
+
+  @media (min-width: 768px) {
+    font-size: 42px;
+  }
 `;
 
 export const HeroSubheadline = styled.h2`
   margin: 0;
   color: white;
-  font-size: 28px;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
   text-shadow: 1px 1px 2px black;
+  @media (min-width: 768px) {
+    font-size: 28px;
+  }
 `;
 
 export const HeroCTAButton = styled.button`
