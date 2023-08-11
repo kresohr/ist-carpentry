@@ -3,7 +3,6 @@ import backgroundImage from "../images/kitchen.png";
 
 export const HeroContainer = styled.div`
   background-image: url(${backgroundImage});
-  margin-top: 120px;
   width: 100%;
   min-height: 400px;
 

@@ -6,12 +6,14 @@ export const Nav = styled.div`
   background: #ffffff;
   height: 120px;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
+  border-bottom: solid 2px #e4e4e4;
+  z-index: 100;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -68,31 +70,6 @@ export const NavItemWrapper = styled.div`
   }
 `;
 
-// Button je za sad izbačen iz navigacije
-
-/* export const NavButton = styled.nav`
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-`;
-
-export const NavButtonLink = styled(Link)`
-  background: #343434;
-  color: #ffffff;
-  padding: 10px 22px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
-  &.hover {
-    transition: all 0.2s ease-in-out;
-    background: #ffffff;
-    color: black;
-  }
-`; */
-
 export const NavLogoWrapper = styled(Link)`
   position: fixed;
   top: 0;
@@ -101,6 +78,7 @@ export const NavLogoWrapper = styled(Link)`
   padding-top: 30px;
   width: 135px;
   height: 60px;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     position: relative;
