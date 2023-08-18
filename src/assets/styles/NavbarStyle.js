@@ -98,8 +98,7 @@ export const HamburgerWrapper = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  margin-right: 40px;
-  margin-top: 40px;
+  padding: 30px;
 
   @media (min-width: 768px) {
     display: none;

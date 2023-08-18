@@ -37,7 +37,7 @@ export const AboutHighlightContent = styled.div`
   flex-direction: column;
   font-size: 18px;
   text-align: center;
-  background-color: rgba(230, 230, 230, 0.5);
+  background-color: #e6e6e6;
   max-width: 600px;
   @media (min-width: 768px) {
     max-width: 400px;
@@ -57,5 +57,5 @@ export const AboutHighlightBottomContainer = styled.div`
   text-align: center;
   max-width: 500px;
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 20px;
 `;

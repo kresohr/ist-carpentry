@@ -29,8 +29,8 @@ export const ContactDescription = styled.p`
 
 export const ContactHeadSection = styled.div`
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   background-image: url(${WoodTexture});
   background-repeat: repeat;
   background-size: cover;
@@ -57,7 +57,7 @@ export const ContactDetailsRow = styled.div`
 `;
 
 export const ContactDetailsLink = styled.a`
-  color: #ffc300;
+  color: #3aa4d7;
   margin: 0;
   padding: 6px;
 `;

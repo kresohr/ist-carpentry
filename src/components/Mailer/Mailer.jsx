@@ -39,7 +39,7 @@ const Mailer = () => {
         import.meta.env.VITE_SERVICE,
         import.meta.env.VITE_TEMPLATE,
         values,
-        import.meta.env.VITE_VALUE
+        import.meta.env.VITE_VALUES
       );
       setMessageSent(true);
     } catch (error) {
