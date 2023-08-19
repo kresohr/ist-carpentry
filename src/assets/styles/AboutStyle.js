@@ -13,8 +13,7 @@ export const AboutHighlight = styled.div`
   justify-content: center;
 
   padding: 10px;
-  margin: 20px 0;
-  gap: 20px;
+  margin: 30px 0;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -37,8 +36,9 @@ export const AboutHighlightContent = styled.div`
   flex-direction: column;
   font-size: 18px;
   text-align: center;
-  background-color: #e6e6e6;
+  background-color: white;
   max-width: 600px;
+  padding-top: 20px;
   @media (min-width: 768px) {
     max-width: 400px;
   }

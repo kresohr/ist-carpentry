@@ -10,7 +10,7 @@ export const ContactWrapper = styled.section`
 
 export const Headline = styled.h1`
   font-size: 42px;
-  color: white;
+  color: ${(props) => (props.$orange ? "#FFBF00" : "white")};
   text-shadow: 1px 1px 2px black;
   margin: 0;
   text-align: center;

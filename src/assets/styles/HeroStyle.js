@@ -20,7 +20,7 @@ export const HeroContainer = styled.div`
 
 export const HeroHeadline = styled.h1`
   margin: 0;
-  color: white;
+  color: #ffbf00;
   font-size: 35px;
   text-shadow: 1px 1px 2px black;
 
@@ -37,17 +37,19 @@ export const HeroSubheadline = styled.h2`
   text-align: center;
   text-shadow: 1px 1px 2px black;
   @media (min-width: 768px) {
-    font-size: 28px;
+    font-size: 24px;
   }
 `;
 
 export const HeroCTAButton = styled.button`
-  margin-top: 50px;
-  background: #292929;
+  margin-top: 26px;
+
   color: white;
   cursor: pointer;
-  border: 3px solid black;
+
+  background-color: #292929;
   padding: 15px 25px;
-  font-size: 16px;
-  font-family: "Lalezar", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
 `;

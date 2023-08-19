@@ -29,7 +29,6 @@ const Navbar = () => {
         </NavLogoWrapper>
         <NavContainer toggled={menuToggled}>
           <NavigationLink to="/services">USLUGE</NavigationLink>
-          <NavigationLink to="/projects">PROJEKTI</NavigationLink>
 
           <NavigationLink to="/about-us">O NAMA</NavigationLink>
           <NavigationLink to="/contact">KONTAKT</NavigationLink>

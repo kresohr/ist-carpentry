@@ -35,7 +35,7 @@ export const Form = styled(FormikForm)`
 `;
 
 export const Field = styled(FormInput)`
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 10px;
   height: ${(props) => (props.$isTextArea ? "50px" : "26px")};
   border: solid 1px #d4d4d4;

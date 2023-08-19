@@ -25,8 +25,8 @@ export const FooterMapWrapper = styled.div`
   padding: 20px;
 
   @media (min-width: 768px) {
-    height: 250px;
-    width: 250px;
+    height: 350px;
+    width: 350px;
     max-width: 350px;
     justify-content: end;
     align-items: end;

@@ -3,21 +3,21 @@ import { NavLink as Link } from "react-router-dom";
 import Hamburger from "hamburger-react";
 
 export const Nav = styled.div`
-  background: #ffffff;
-  height: 120px;
-  width: 100%;
-  position: sticky;
-  top: 0;
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 120px;
+  width: 100%;
+  z-index: 100;
+  background: #ffffff;
   justify-content: center;
   align-items: end;
   border-bottom: solid 2px #e4e4e4;
-  z-index: 100;
 
   @media (min-width: 768px) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
   }
 `;
@@ -39,6 +39,7 @@ export const NavContainer = styled.nav`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-right: 120px;
   }
 `;
 
@@ -65,27 +66,20 @@ export const NavigationLink = styled(Link)`
   }
 `;
 
-export const NavItemWrapper = styled.div`
-  @media (min-width: 768px) {
-  }
-`;
-
 export const NavLogoWrapper = styled(Link)`
   position: fixed;
   top: 0;
   left: 0;
   padding-left: 20px;
-  padding-top: 30px;
+  margin-top: 20px;
   width: 135px;
   height: 60px;
   cursor: pointer;
 
   @media (min-width: 768px) {
-    position: relative;
-    display: block;
-    padding: 30px;
-    width: 150px;
-    height: 80px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
   }
 `;
 
@@ -96,16 +90,13 @@ export const NavLogo = styled.img`
 
 export const HamburgerWrapper = styled.div`
   position: fixed;
+  margin-right: 20px;
   top: 0;
-  right: 0;
-  padding: 30px;
+  padding: 40px;
 
   @media (min-width: 768px) {
     display: none;
   }
 `;
 
-export const HamburgerIcon = styled(Hamburger)`
-  @media (min-width: 768px) {
-  }
-`;
+export const HamburgerIcon = styled(Hamburger)``;

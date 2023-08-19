@@ -1,14 +1,41 @@
 import React from "react";
 import {
+  ServiceBottomButton,
+  ServiceBottomDescription,
+  ServiceBottomHeadline,
+  ServiceBottomWrapper,
   ServiceDescription,
   ServiceDescriptionHeadline,
   ServiceDescriptionSplit,
   ServiceDescriptionText,
   ServiceImage,
+  ServiceImageWrapper,
   ServiceRow,
   ServiceWrapper,
 } from "../../assets/styles/ServicesStyle";
 import kitchen1 from "../../assets/images/kuhinja1.jpg";
+import kitchen2 from "../../assets/images/kuhinja2.jpg";
+import kitchen3 from "../../assets/images/kuhinja3.jpg";
+import kitchen4 from "../../assets/images/kuhinja4.jpg";
+import kitchen5 from "../../assets/images/kuhinja5.jpg";
+import internal1 from "../../assets/images/namjestaj1.jpg";
+import internal2 from "../../assets/images/namjestaj2.jpg";
+import internal3 from "../../assets/images/namjestaj3.jpg";
+import internal4 from "../../assets/images/namjestaj4.jpg";
+import internal5 from "../../assets/images/namjestaj5.jpg";
+import external1 from "../../assets/images/vanjski1.jpg";
+import external2 from "../../assets/images/vanjski2.jpg";
+import external3 from "../../assets/images/vanjski3.jpg";
+import external4 from "../../assets/images/vanjski4.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Autoplay,
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -23,7 +50,38 @@ const Services = () => {
             elegancijom u širokom spektru boja i materijala.
           </ServiceDescriptionText>
         </ServiceDescription>
-        <ServiceImage src={kitchen1} />
+        <ServiceImageWrapper>
+          <Swiper
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: true,
+            }}
+            modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+            slidesPerView={1}
+            onSlideChange={() => {
+              console.log("slide change");
+            }}
+            navigation
+            pagination={{ clickable: true, type: "bullets" }}
+            scrollbar={{ draggable: true }}
+          >
+            <SwiperSlide>
+              <ServiceImage src={kitchen1} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServiceImage src={kitchen2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServiceImage src={kitchen3} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServiceImage src={kitchen4} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServiceImage src={kitchen5} />
+            </SwiperSlide>
+          </Swiper>
+        </ServiceImageWrapper>
       </ServiceRow>
       <ServiceRow $reverse>
         <ServiceDescription>
@@ -36,8 +94,41 @@ const Services = () => {
             stil.
           </ServiceDescriptionText>
         </ServiceDescription>
-        <ServiceImage src={kitchen1} />
+        <ServiceImageWrapper>
+          <Swiper
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: true,
+            }}
+            modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+            slidesPerView={1}
+            onSlideChange={() => {
+              console.log("slide change");
+            }}
+            navigation
+            pagination={{ clickable: true, type: "bullets" }}
+            scrollbar={{ draggable: true }}
+          >
+            <SwiperSlide>
+              <ServiceImage src={internal1} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServiceImage src={internal2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServiceImage src={internal3} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServiceImage src={internal4} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServiceImage src={internal5} />
+            </SwiperSlide>
+          </Swiper>
+        </ServiceImageWrapper>
       </ServiceRow>
+
+      {/* OVO JE ZA TEST SWIPERA. */}
       <ServiceRow>
         <ServiceDescription>
           <ServiceDescriptionHeadline>Eksterijeri</ServiceDescriptionHeadline>
@@ -48,8 +139,46 @@ const Services = () => {
             drveta koji se ističu ljepotom i funkcionalnošću.
           </ServiceDescriptionText>
         </ServiceDescription>
-        <ServiceImage src={kitchen1} />
+        <ServiceImageWrapper>
+          <Swiper
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: true,
+            }}
+            modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+            slidesPerView={1}
+            onSlideChange={() => {
+              console.log("slide change");
+            }}
+            navigation
+            pagination={{ clickable: true, type: "bullets" }}
+            scrollbar={{ draggable: true }}
+          >
+            <SwiperSlide>
+              <ServiceImage src={external1} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServiceImage src={external2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServiceImage src={external3} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ServiceImage src={external4} />
+            </SwiperSlide>
+          </Swiper>
+        </ServiceImageWrapper>
       </ServiceRow>
+      <ServiceBottomWrapper>
+        <ServiceBottomHeadline>... I još toga!</ServiceBottomHeadline>
+        <ServiceBottomDescription>
+          Ne vidite ono što tražite? Ne brinite! <br />
+          Radimo po narudžbi.
+        </ServiceBottomDescription>
+        <Link to="/contact">
+          <ServiceBottomButton>Kontakt</ServiceBottomButton>
+        </Link>
+      </ServiceBottomWrapper>
     </ServiceWrapper>
   );
 };

@@ -16,7 +16,7 @@ const About = () => {
     <AboutWrapper>
       <AboutHighlight>
         <AboutHighlightContent>
-          <Headline>Kvaliteta kakvu zaslužujete</Headline>
+          <Headline $orange>Kvaliteta kakvu zaslužujete</Headline>
 
           <AboutHighlightContentDescription>
             Dobrodošli u naš svijet stolarije gdje se svaka ideja pretvara u
