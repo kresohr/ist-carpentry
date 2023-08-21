@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ServiceWrapper = styled.section`
   display: grid;
   grid-template-columns: 1fr;
-  padding: 20px;
+  padding: 20px 10px 20px 10px;
+  margin-top: 20px;
 `;
 
 export const ServiceRow = styled.div`
