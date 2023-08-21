@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   ServiceBottomButton,
   ServiceBottomDescription,
@@ -38,6 +38,9 @@ import {
 import { Link } from "react-router-dom";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <ServiceWrapper>
       <ServiceRow>

@@ -34,8 +34,8 @@ export const BodyDescription = styled.p`
 
 export const BodySwiperWrapper = styled.div`
   width: 100%;
-  padding: 20px 40px 0px 40px;
-  max-width: 400px;
+  padding: 20px 20px 0px 20px;
+  max-width: 500px;
   margin: 0 auto;
 `;
 

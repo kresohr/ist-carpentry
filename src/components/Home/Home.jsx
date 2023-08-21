@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../Hero/Hero";
 import {
   BodyCarouselImage,
@@ -26,6 +26,9 @@ import external4 from "../../assets/images/vanjski4.jpg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <Hero />
@@ -40,6 +43,9 @@ const Home = () => {
             Dimenzije prostora nisu po standardima? Nema problema, sve radimo po
             mjeri.
           </BodyDescription>
+          <Link to="/services">
+            <BodyContainerButton>Usluge</BodyContainerButton>
+          </Link>
           <BodySwiperWrapper>
             <Swiper
               autoplay={{
@@ -84,7 +90,7 @@ const Home = () => {
         <BodyContainer>
           <BodyHeadline>Za koga proizvodimo?</BodyHeadline>
           <BodyDescription>
-            Naša strast prema drvnoj stolariji ne poznaje granice, a naši
+            Naša strast prema stolarskom zanatu ne poznaje granice, a naši
             proizvodi pronalaze svoje mjesto u različitim okruženjima.
           </BodyDescription>
           <BodyDescription>

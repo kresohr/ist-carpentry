@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   AboutHighlight,
   AboutHighlightBottomContainer,
@@ -12,6 +12,9 @@ import aboutImg from "../../assets/images/aboutus-coverimg.jpg";
 import { Headline } from "../../assets/styles/ContactStyle";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <AboutWrapper>
       <AboutHighlight>
