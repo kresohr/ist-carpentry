@@ -6,7 +6,7 @@ export const BodyWrapper = styled.section`
   align-items: center;
 
   margin: 0 auto;
-  margin: 40px 20px 20px 20px;
+  margin: 40px 20px 40px 20px;
 
   text-align: center;
 `;
