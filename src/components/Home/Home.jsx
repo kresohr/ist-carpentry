@@ -17,7 +17,7 @@ import {
   Pagination,
   Scrollbar,
 } from "swiper/modules";
-import kitchen1 from "../../assets/images/kuhinja1.jpg";
+import kitchen2 from "../../assets/images/kuhinja2.jpg";
 import internal1 from "../../assets/images/namjestaj1.jpg";
 import internal2 from "../../assets/images/namjestaj2.jpg";
 import external2 from "../../assets/images/vanjski2.jpg";
@@ -36,8 +36,9 @@ const Home = () => {
         <BodyContainer>
           <BodyHeadline>Što proizvodimo?</BodyHeadline>
           <BodyDescription>
-            Proizvodimo sve za uređenje interijera ili eksterijera Vašeg doma
-            ili poslovnog prostora.
+            Proizvodimo sve za uređenje interijera i eksterijera Vašeg doma ili
+            poslovnog prostora poput vrata, prozora, obloga, kliznih i harmo
+            stijena.
           </BodyDescription>
           <BodyDescription>
             Dimenzije prostora nisu po standardima? Nema problema, sve radimo po
@@ -62,7 +63,7 @@ const Home = () => {
               scrollbar={{ draggable: true }}
             >
               <SwiperSlide>
-                <BodyCarouselImage src={kitchen1} />
+                <BodyCarouselImage src={kitchen2} />
               </SwiperSlide>
               <SwiperSlide>
                 <BodyCarouselImage src={internal2} />

@@ -28,6 +28,7 @@ const Navbar = () => {
           <NavLogo src={logoImage} />
         </NavLogoWrapper>
         <NavContainer toggled={menuToggled}>
+          <NavigationLink to="/">POČETNA</NavigationLink>
           <NavigationLink to="/services">USLUGE</NavigationLink>
 
           <NavigationLink to="/about-us">O NAMA</NavigationLink>
