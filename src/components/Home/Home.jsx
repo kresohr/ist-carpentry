@@ -77,7 +77,7 @@ const Home = () => {
         <BodyContainer $transition>
           <BodyHeadline>Gdje proizvodimo?</BodyHeadline>
           <BodyDescription>
-            Nalazimo se u selu Piškorevci, smještenom u srcu prekrasne
+            Nalazimo se u mjestu Piškorevci, smještenom u srcu prekrasne
             Slavonije, nedaleko od Đakova.
           </BodyDescription>
           <BodyDescription>

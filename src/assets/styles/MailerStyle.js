@@ -51,12 +51,20 @@ export const FormButton = styled.button`
   font-family: "Roboto", sans-serif;
   border: solid 1px #d4d4d4;
   padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: #404040;
+  }
 
   ${(props) =>
     props.disabled &&
     css`
       color: #e0e0e0;
       background-color: #6b6b6b;
+      cursor: auto;
+      &:hover {
+        background-color: #6b6b6b;
+      }
     `}
 `;
 

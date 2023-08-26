@@ -27,9 +27,7 @@ const Footer = () => {
         <FooterLinkWrapper href="tel:+38598373554">
           +385 098 373 554
         </FooterLinkWrapper>
-        <FooterLinkWrapper href="tel:+385031854500">
-          +385 031 854 500
-        </FooterLinkWrapper>
+
         <FooterLinkWrapper href="mailto:ist.piskorevci@gmail.com">
           ist.piskorevci@gmail.com
         </FooterLinkWrapper>
